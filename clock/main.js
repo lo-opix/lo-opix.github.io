@@ -9,7 +9,7 @@ function updateDay(){
 		days[i].classList.remove("active")
 	}
 	if (date.getDay() == 0){
-		days[0].classList.add("active")
+		days[6].classList.add("active")
 	}else{
 		days[date.getDay() - 1].classList.add("active")
 	}
