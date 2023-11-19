@@ -8,7 +8,11 @@ function updateDay(){
 	for (let i = 0; i < 7; i++){
 		days[i].classList.remove("active")
 	}
-	days[date.getDay() - 1].classList.add("active")
+	if (date.getDay() == 0){
+		days[0].classList.add("active")
+	}else{
+		days[date.getDay() - 1].classList.add("active")
+	}
 }
 
 let lastInit = Date.now()
